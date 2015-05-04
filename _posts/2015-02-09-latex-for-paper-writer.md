@@ -6,7 +6,7 @@ data: 2015-02-09
 
 <p>Here are some tips for writing papers and it is constantly updated. </p>
 
-<h2>Customizing Enumerated Lists</h2>
+<h3>Customizing Enumerated Lists</h3>
 
 <p>Very often, you would want to change the counters for
 <span style="font-family:monospace; color:#2020C0">
