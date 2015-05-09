@@ -14,10 +14,13 @@ title: Projects
 <h3>Improving Spectral Efficiency for ad hoc Networks</h3>
 
 <h2>Course Projects </h2>
+{% for proj in site.courseProj  %}
+   <h3>{{ proj.title }}</h3>
+    <p> {{  proj.content  }}</p>
+{% endfor %}
 
 <!-- <h2>Hobby Projects</h2>
 <h3>Python Projects</h3>
-
 <ul>
     <li> Interactive Python Programming Using CodeSculptor</li>
 </ul>

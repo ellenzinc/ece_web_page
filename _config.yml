@@ -5,3 +5,5 @@ collections:
     output: true
   experiences:
     output: true
+  courseProj:
+    output: true
