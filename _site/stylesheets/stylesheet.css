@@ -36,7 +36,6 @@ details,
 figcaption,
 figure,
 table,
-footer,
 header,
 hgroup,
 main,
@@ -769,15 +768,15 @@ dl dd {
   font-weight: 100;
 }
 
-/**footer nav {
+footer nav {
   padding-top: 20px;
   padding-bottom: 30px;
   margin-top: 40px;
   font-size: 13px;
   color: #aaa;
-}*/
+}
 footer{
-	position: absolute;
+	/*position: absolute;*/
 	left: 20 px;
 	bottom : 0;
 }
