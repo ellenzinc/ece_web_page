@@ -181,9 +181,6 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 
-img {
-  border: 0;
-}
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
@@ -421,10 +418,6 @@ table {
   border-collapse: collapse;
 }
 
-td,
-th {
-  padding: 0;
-}
 
 /* LAYOUT STYLES */
 body {
@@ -614,7 +607,8 @@ hr {
 
 table {
   width: 100%;
-  border: 1px solid #ebebeb;
+  border-spacing:10px;
+  border: 0px solid #ebebeb;
 }
 
 th {
@@ -624,7 +618,9 @@ th {
 td {
   font-weight: 300;
   text-align: center;
-  border: 1px solid #ebebeb;
+  border-color:#E9E9E9;
+  border-spacing:20px;
+  padding: 0.7em 0.6em;
 }
 
 form {
@@ -814,6 +810,18 @@ nav ul {
 nav ul li {
 	display: inline;
 	margin-right: 40px;
+}
+
+img {
+	background: #F3F4F5;
+  	border: 1px solid #DEDFE0;
+  	padding: 15px;
+  	-moz-border-radius: 3px;
+  	-webkit-border-radius: 3px;
+  	border-radius: 3px;
+   	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 /* #Media Queries

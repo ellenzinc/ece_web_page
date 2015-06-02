@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Latex Cheatsheet for Paper Writer
+title: Latex Cheatsheet for Paper Writer (last updated on 2015-03-15)
 data: 2015-02-09
 ---
 
