@@ -470,7 +470,6 @@ header h2 {
   letter-spacing: 0;
 }
 
-
 .photo{
   position: absolute;
   width: 420px;
@@ -793,9 +792,12 @@ footer a:hover {
   content: '.';
 }
 
+
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
+
+
 
 /* Haining Edit
 ================================================== */
@@ -812,7 +814,19 @@ nav ul li {
 	margin-right: 40px;
 }
 
-img {
+
+.painting figure {
+	display:inline-block;
+	padding:0;
+}
+
+.painting figcaption{
+	text-align:center;
+	max-width: 300px;
+}
+
+
+.painting img {
 	background: #F3F4F5;
   	border: 1px solid #DEDFE0;
   	padding: 15px;
@@ -823,6 +837,8 @@ img {
   	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.1);
   	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
+
+
 
 /* #Media Queries
 ================================================== */
@@ -904,8 +920,8 @@ header a.button{
     font-size: 24px;
   }
 header a.button {
-  width: 1;
-  height: 1;
+  width: auto;
+  height: auto;
   margin-top: 0px;
   padding-top: 0px;
   padding-left: 0px;
