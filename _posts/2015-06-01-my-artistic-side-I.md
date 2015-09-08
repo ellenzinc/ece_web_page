@@ -7,8 +7,8 @@ date: 2015-06-01
 In this blog, I will share with you some of my amateur watercolor paintings on flowers and landscape. 
 </p>
 <p>
-Every year, I would include "try something new" as one item in the new year's resolutions. Last year, it turns out that I run 12 km for the
-first time and this year, the story goes on to draw some watercolor paintings to decorate my home!
+Every year, I would include "try something new" as one item in the new year's resolutions. Last year, it turns out that I ran 12 km for the
+first time and this year, the story goes on to drawing  some watercolor paintings to decorate my home!
 <p>
 Painting is such a relaxing and rewarding creative procedure and it can change the way you see the world! 
 </p>

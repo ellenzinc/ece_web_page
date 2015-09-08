@@ -38,6 +38,7 @@
       					<section id="main-content">
 						<h2>Research Projects</h2>
 <h3>Outage Balancing for Femtocell Networks</h3>
+<p><font color="A52A2A"><b>Keywords:</b> Non-convex Optimization, Mixed-Interger Programming Problem, Non-linear Perron-Frobenius Theorem, Heterogeneous Networks </font></p>
 <p> <img src="../images/systemModel.png" style="float:right;width:300px;height:220px"> Given channel statistics information either locally at each femtocell base-station (FBS) or 
 collected at some control node, we aim at optimizing certain system parameters based on the outage probability for FUEs and MUEs.
 In a two-tier heterogenous network, interference comes from both the intra-tier (femto-to-femto, macro-to-macro)
@@ -46,25 +47,78 @@ In a two-tier heterogenous network, interference comes from both the intra-tier 
 	<li>With resource allocation fixed, jointly optimize the rate allocation and power allocation for each link. </li>
 	<li>With rate requirement fixed,  jointly optimizing resource allocation and power allocation for each link. </li>
 </ol>
-In both cases, we are trying to optimize a network metric based on outage probability, which provide certain fairness among
+In both cases, we try to optimize outage-probability based network metrics, which provide certain fairness among
+base-stations as well.
+<!--In both cases, we are trying to optimize a network metric based on outage probability, which provide certain fairness among
 base-stations as well. While Problem 1 is reduced to a geometric programming problem, Problem 2 is much more challenging 
 with a mixed-integer non-convex nature. To tackle the challenge, the joint optimization is decomposed into an iterative 
 alternating optimizing procedure: 1) With resource allocation fixed, power allocation is optimally solved distributively 
 utilizing the non-linear Perron-Frobenius Theorem. 2) With power allocation fixed, the resource allocation is updated using
 a local search strategy. The designed algorithm is effective in greatly reducing the system outage probability and allocate 
 orthogonal resources to links with potentially high mutual interference.
-
+-->
 <h3>Interference Mitigation with Queue Stability Consideration</h3>
+<p><font color="A52A2A"><b>Keywords: </b>Lyapunov Optimization, Non-convex Optimization, Successive Convex Approximation. </p>
+</font><p>
+We study the spectrum sharing in heterogeneous networks considering the queue-stability of the victim layer.
+Traditional resource scheduling baed on channel condition alone may lead to intolerable user backlogs and frequent
+package drops. Based on Lyapunov optimization, we designed algorithms to control the interfering tier power 
+adaptively constrained on the queue-stability on the interfered users.
+</p>
 
 <h3>Game Theory and Its Applications</h3>
+<p><font color="A52A2A"><b>Keywords:</b> Non-cooperative games, auction design, mechanism design, pricing.</font></p>
 
+<p>Some optimization problems in wireless networks can be a natural application of non-cooperative games. By analyzing the convergence
+for non-cooperative game based algorithms 
+in tiered networks, we can gain insight into when we can adopt non-cooperative mechanisms for sharing communication nodes and when we should use orthogonal
+resources. </p>
+
+<p>Another important application of algorithmic game theory is mechanism design in areas like spectrum trading, where the spectrum acts as
+a commodity that can be sold to customers (in our case, customers can be user equipments, base-stations, or both). More generally, power or backhaul bandwidth can
+ also be viewed as a valuable resource for trading.</p>
+
+
+<h2>Intern Projects</h2>
 <h3>Improving Spectral Efficiency for ad hoc Networks</h3>
+<p><font color="A52A2A"><b>Keywords: </b> MIMO, ad hoc networks, link adaptation, joint transceiver design, successive interference cancellation </font></p>
+<p>The projects aim at improving the spectral efficiency of ad hoc networks using multiple MIMO techniques. 
+By striking a balance among several trade-offs for different techniques, such as power control, beamforming/precoding, interference cancellation, 
+link adaptation, spectrum division, etc. simulations have shown more than 50 times gain in terms of spectral efficiency
+compared with the baseline. </p>
+ 
+<h3>Processing Field Data for Power Saving Projection of WCDMA+</h3>
+<p><font color="A52A2A"><b>Keywords: </b> Perl, script, Data Cleanup, Regular Expression.</font></p>
+<p>Processed 1TeraByte raw data to project the percentage of power saving for early decoding in WCDMA+.</p>
+
+<h3>Searcher Algorithm Enhancement with Intermittent Scheduling</h3>
+<p><font color="A52A2A"><b>Keywords: </b> C++, AGC, WCDMA</font></p>
+<p>AGC(Automatic Gain Controller) output may suffer from intermittent up-shooting or down-shooting due to its transient response
+during intermittent HSPA scheduling in WCDMA systems.
+Algorithm is designed and simulated in C++ to adaptively compensate the spikes. Performance shows that the proposed scheme can
+significantly improve searcher performance in terms of false alarm rate while not decreasing the detection rate.
+</p>
+
+<h3>Adaptive Taylor Approximation Algorithm for UERS Channel Estimation and Interference Cancellation</h3>
+<p><font color="A52A2A"><b>Keywords: </b>LTE, UERS, Interference Cancellation, Channel Estimation, Taylor Approximation </font></p>
+<p>
+Perform optimization and generate LUT for online parameter basis selection and achieve significantly improvement in terms of MSE (up to 7 dB) 
+compared with existing algorithm. 
+</p>
 
 <h2>Course Projects </h2>
 
    <h3>Simulation Biham-Middleton-Levine (BML) Traffic Model in R</h3>
-    <p> <p>As a homework project for an audited statistic programming course (STAT242), the simulation is about <q><i>cars moving on a grid</i></q>.  As required in the description of the project, we populate the grid by placing cars into a <i>r x c</i> grid. It has been found by Bihan <i>et el</i> that the steady-state flow of traffic suddenly went from smooth flow to a complete jam. The projects are aboud writing R packages, vectorized operations in R and S3 methods. See the 
-<a href="../scratch/stat242_video.html">link</a> for generated animations. </p>
+    <p> <p><font color="A52A2A">
+<b>Keywords: </b>
+R,  R package, Data Visualization
+ </font></p>
+
+<p>As a homework project for an audited statistic programming course (STAT242), 
+the simulation is about <q><i>cars moving on a grid</i></q>. As required in the description of the project, we populate the grid by placing cars into a <i>r x c</i> grid.
+ It has been found by Bihan <i>et el</i> that the steady-state flow of traffic suddenly went from smooth flow to a complete jam. 
+The project aims to practicing writing R packages, vectorized operations in R and S3 methods. 
+<a href="../scratch/stat242_video.html">See the link for generated animations. </a> </p>
 
 </p>
 
