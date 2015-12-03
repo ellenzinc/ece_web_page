@@ -32,6 +32,8 @@
 
 
 import bibtexparser
+from bibtexparser.bparser import BibTexParser
+from bibtexparser.customization import convert_to_unicode
 import os
 
 # function parse names for bib authors
@@ -62,14 +64,16 @@ def bib2jekyllcol (inputFile, outputDir):
     # read and parse bib file
     with open(inputFile) as bibtex_file:
         bibtex_str = bibtex_file.read()
-         
-    bib_database = bibtexparser.loads(bibtex_str) 
     
+    parser = BibTexParser()
+    parser.customization = convert_to_unicode
+    bib_database = bibtexparser.loads(bibtex_str, parser=parser)
+
     # create dictionary for transformation of month to number
     month_list = ["jan", "feb", "mar", "apr", "may", "june", "july", "aug", "sept", "oct", "nov", "dec"]
     
     # type names:
-    type_list = ["type", "title", "author", "journal", "volume", "number",
+    type_list = ["title", "author", "journal", "volume", "number",
                   "year", "month", "doi", "pages", "publisher", "booktitle", "note"]
     
     if not os.path.exists(outputDir):
@@ -85,10 +89,14 @@ def bib2jekyllcol (inputFile, outputDir):
             print e
  
     for entry in bib_database.entries:
-        with open(outputDir+entry["id"]+'.md','w') as f:
+        print(entry["ID"])
+        print(entry)
+        with open(outputDir+entry["ID"]+'.md','w') as f:
             f.write("---\n")
             orderIdx = ""
-            for bib_type in type_list:   
+            if (entry.has_key("ENTRYTYPE")):
+                f.write("type: "+entry["ENTRYTYPE"]+"\n")
+            for bib_type in type_list:
                 if bib_type == "year":
                     if entry.has_key(bib_type):
                         orderIdx = orderIdx + entry[bib_type]
@@ -107,12 +115,14 @@ def bib2jekyllcol (inputFile, outputDir):
                                 break
                     else:
                         orderIdx = orderIdx + "99"
-                             
+            
+
+            
                 if(entry.has_key(bib_type)):
                     if bib_type == "author":           
                         f.write(bib_type +": " +  parse_authors(entry[bib_type])+"\n")
                     else:
-                        f.write(bib_type+": "+entry[bib_type] + "\n")     
+                        f.write(bib_type+": "+entry[bib_type] + "\n")
                 else:
                     f.write(bib_type + ":" + "\n")   
             

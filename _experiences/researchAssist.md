@@ -3,7 +3,7 @@ layout: default
 title: Graduate Student Researcher
 organization: Broadband Radio Access Technologies Laboratory, University of California, Davis
 start_date: 2011.9
-end_date: 2016.1
+end_date: 2016.3
 location: Davis, CA
 ---
 
